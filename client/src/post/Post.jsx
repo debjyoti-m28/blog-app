@@ -6,7 +6,7 @@ export default function Post() {
     <div className='post'>
         <img
          className='postImage'
-         src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg" 
+         src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" 
          alt="" 
          />
          <div className="postInfo">
@@ -22,6 +22,8 @@ export default function Post() {
             Lorem, ipsum dolor sit amet consectetur 
             adipisicing elit. Quas facere neque tempore in nulla 
             consequuntur repellendus ipsum ex corrupti
+             rem laudantium doloremque non dolorem sapiente.
+             consequuntur repellendus ipsum ex corrupti
              rem laudantium doloremque non dolorem sapiente.
          </p>
     </div>
