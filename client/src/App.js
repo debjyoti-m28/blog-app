@@ -11,21 +11,24 @@ import {
   Routes,
   Link
 } from "react-router-dom";
+import Footer from "./footer/Footer";
 
 function App() {
-  const user =false;
+  const user = true;
   return (
     <Router>
-      <Topbar/>
-           
+      <Topbar />
+
       <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route exact path="/post/:postid" element={<Single/>}/>
-        <Route exact path="/write" element={user? <Write/> : <Register/>}/>
-        <Route exact path="/settings" element={user? <Settings/> :<Register/>}/>
-        <Route exact path="/login" element={user? <Home/> : <Login/>}/>
-        <Route exact path="/register" element={user? <Home/> : <Register/>}/>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/post/:postid" element={<Single />} />
+        <Route exact path="/write" element={user ? <Write /> : <Register />} />
+        <Route exact path="/settings" element={user ? <Settings /> : <Register />} />
+        <Route exact path="/login" element={user ? <Home /> : <Login />} />
+        <Route exact path="/register" element={user ? <Home /> : <Register />} />
       </Routes>
+
+      <Footer />
     </Router>
   );
 }
