@@ -11,10 +11,13 @@ import {
   Routes,
   Link
 } from "react-router-dom";
-import Footer from "./footer/Footer";
+import { useContext } from "react";
+import { Context } from "./context/Context";
+
 
 function App() {
-  const user = true;
+  const { user }= useContext(Context);
+
   return (
     <Router>
       <Topbar />
@@ -27,8 +30,6 @@ function App() {
         <Route exact path="/login" element={user ? <Home /> : <Login />} />
         <Route exact path="/register" element={user ? <Home /> : <Register />} />
       </Routes>
-
-      <Footer />
     </Router>
   );
 }
